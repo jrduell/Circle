@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Circle-->
         <scene sceneID="UbN-AS-YRe">
             <objects>
                 <viewController id="1av-bR-f3c" sceneMemberID="viewController">
@@ -16,6 +16,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Cw-HJ-MWb">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="385" id="rbc-s9-Qnl">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="385"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rbc-s9-Qnl" id="wUy-O6-QrX">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="385"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tda-jM-RMp">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="385"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hiking" translatesAutoresizingMaskIntoConstraints="NO" id="lsL-hL-oZv">
+                                                            <rect key="frame" x="20" y="20" width="374" height="275"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="275" id="Z1E-aO-QuD"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l4P-zY-KVq">
+                                                            <rect key="frame" x="20" y="310" width="45" height="45"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="45" id="r7u-on-5A1"/>
+                                                                <constraint firstAttribute="width" constant="45" id="zE7-TM-ne7"/>
+                                                            </constraints>
+                                                            <color key="tintColor" systemColor="labelColor"/>
+                                                            <state key="normal" image="person.circle.fill" catalog="system"/>
+                                                        </button>
+                                                        <textView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aDm-up-eK1">
+                                                            <rect key="frame" x="75" y="310" width="319" height="45"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="45" id="I36-wF-JGU"/>
+                                                            </constraints>
+                                                            <mutableString key="text">Apart from counting words and characters, our online editor can help you to improve word choice and writing style, and, optionally, help you to detect grammar mistakes and plagiarism. To check word count, simply place your cursor into the text box above and start typing. You'll see the number of characters and words increase or decrease as you type, delete, and edit them. You can also copy and paste text from another program over into the online editor above. The Auto-Save feature will make sure you won't lose any changes while editing, even if you leave the site and come </mutableString>
+                                                            <color key="textColor" systemColor="labelColor"/>
+                                                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        </textView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="l4P-zY-KVq" firstAttribute="leading" secondItem="lsL-hL-oZv" secondAttribute="leading" id="Ed0-6F-WPk"/>
+                                                        <constraint firstItem="aDm-up-eK1" firstAttribute="top" secondItem="lsL-hL-oZv" secondAttribute="bottom" constant="15" id="PbZ-cj-Uac"/>
+                                                        <constraint firstItem="lsL-hL-oZv" firstAttribute="leading" secondItem="Tda-jM-RMp" secondAttribute="leading" constant="20" id="eWi-8I-nzj"/>
+                                                        <constraint firstItem="lsL-hL-oZv" firstAttribute="centerX" secondItem="Tda-jM-RMp" secondAttribute="centerX" id="gxM-lK-oBg"/>
+                                                        <constraint firstItem="aDm-up-eK1" firstAttribute="leading" secondItem="l4P-zY-KVq" secondAttribute="trailing" constant="10" id="kfp-PH-U3o"/>
+                                                        <constraint firstItem="lsL-hL-oZv" firstAttribute="top" secondItem="Tda-jM-RMp" secondAttribute="top" constant="20" id="qT2-be-EId"/>
+                                                        <constraint firstItem="aDm-up-eK1" firstAttribute="trailing" secondItem="lsL-hL-oZv" secondAttribute="trailing" id="qeV-vh-Wsz"/>
+                                                        <constraint firstAttribute="trailing" secondItem="lsL-hL-oZv" secondAttribute="trailing" constant="20" id="yWP-ET-mHM"/>
+                                                        <constraint firstItem="l4P-zY-KVq" firstAttribute="top" secondItem="lsL-hL-oZv" secondAttribute="bottom" constant="15" id="zQA-lh-9j5"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Tda-jM-RMp" firstAttribute="leading" secondItem="wUy-O6-QrX" secondAttribute="leading" id="6Fl-wN-SuF"/>
+                                                <constraint firstAttribute="trailing" secondItem="Tda-jM-RMp" secondAttribute="trailing" id="VXh-k5-8JG"/>
+                                                <constraint firstItem="Tda-jM-RMp" firstAttribute="top" secondItem="wUy-O6-QrX" secondAttribute="top" id="m0Y-Vf-NCB"/>
+                                                <constraint firstAttribute="bottom" secondItem="Tda-jM-RMp" secondAttribute="bottom" id="u6J-jU-FST"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdD-Jq-tz2" customClass="PostButton" customModule="Circle" customModuleProvider="target">
                                 <rect key="frame" x="177" y="782" width="60" height="60"/>
                                 <constraints>
@@ -35,7 +101,7 @@
                             <constraint firstItem="hdD-Jq-tz2" firstAttribute="centerX" secondItem="hLr-u8-S4b" secondAttribute="centerX" id="mRA-GT-0bJ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="kWW-r6-541">
+                    <navigationItem key="navigationItem" title="Circle" id="kWW-r6-541">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="person.fill" catalog="system" id="sdG-kt-FaA">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -54,7 +120,7 @@
             </objects>
             <point key="canvasLocation" x="2169.5652173913045" y="42.857142857142854"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile-->
         <scene sceneID="9yu-Pm-Hpv">
             <objects>
                 <viewController id="HzR-RK-YwP" sceneMemberID="viewController">
@@ -64,13 +130,13 @@
                         <viewLayoutGuide key="safeArea" id="21E-Ps-uqy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="z1x-2z-8Lt"/>
+                    <navigationItem key="navigationItem" title="Profile" id="z1x-2z-8Lt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ft6-Mw-kHG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3145" y="510"/>
         </scene>
-        <!--View Controller-->
+        <!--Instant Message-->
         <scene sceneID="CRP-bl-P4l">
             <objects>
                 <viewController id="Asn-4L-MBT" sceneMemberID="viewController">
@@ -80,7 +146,7 @@
                         <viewLayoutGuide key="safeArea" id="Vv7-gg-fdm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="0sr-TT-SHw"/>
+                    <navigationItem key="navigationItem" title="Instant Message" id="0sr-TT-SHw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0ab-WV-YsO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -111,9 +177,14 @@
         </designable>
     </designables>
     <resources>
+        <image name="hiking" width="4032" height="3024"/>
+        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="text.bubble.fill" catalog="system" width="128" height="110"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
