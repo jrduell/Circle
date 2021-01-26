@@ -109,25 +109,28 @@
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tIj-Nh-Dw1">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="veE-Au-isQ">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <textAttributes key="titleTextAttributes">
                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                 </textAttributes>
+                                <textAttributes key="largeTitleTextAttributes">
+                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                </textAttributes>
                                 <items>
-                                    <navigationItem title="Circle" id="KDg-5M-ctI">
-                                        <barButtonItem key="leftBarButtonItem" title="Item" image="person" catalog="system" id="QvC-7w-fuW">
+                                    <navigationItem title="Circle" id="hmY-JN-ZjG">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="person" catalog="system" id="9jE-oe-ATV">
                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <connections>
-                                                <action selector="userProfileBtnTapped:" destination="1av-bR-f3c" id="Ut4-AY-ahq"/>
+                                                <action selector="userProfileBtnTapped:" destination="1av-bR-f3c" id="dt4-aj-dAk"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Item" image="message" catalog="system" id="4bb-fi-sCB">
+                                        <barButtonItem key="rightBarButtonItem" image="message" catalog="system" id="vBY-Mx-0Pg">
                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <connections>
-                                                <action selector="messageBtnTapped:" destination="1av-bR-f3c" id="VQI-G9-XT7"/>
+                                                <action selector="messageBtnTapped:" destination="1av-bR-f3c" id="wOE-wg-zEi"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -138,6 +141,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="lMH-ex-GC6" firstAttribute="bottom" secondItem="hdD-Jq-tz2" secondAttribute="bottom" constant="20" id="2Nk-px-KFd"/>
+                            <constraint firstItem="veE-Au-isQ" firstAttribute="leading" secondItem="lMH-ex-GC6" secondAttribute="leading" id="6nB-hP-cYy"/>
+                            <constraint firstItem="veE-Au-isQ" firstAttribute="trailing" secondItem="lMH-ex-GC6" secondAttribute="trailing" id="99y-2c-4sM"/>
+                            <constraint firstItem="veE-Au-isQ" firstAttribute="top" secondItem="lMH-ex-GC6" secondAttribute="top" id="GlE-9I-oQF"/>
                             <constraint firstItem="hdD-Jq-tz2" firstAttribute="centerX" secondItem="hLr-u8-S4b" secondAttribute="centerX" id="mRA-GT-0bJ"/>
                         </constraints>
                     </view>
@@ -162,9 +168,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="277-EA-hF0">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="277-EA-hF0">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -182,9 +187,72 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vkv-CF-D8K">
+                                <rect key="frame" x="0.0" y="90" width="414" height="772"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="73" id="gI6-1T-7il">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="73"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gI6-1T-7il" id="w9M-YL-2sT">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="73"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1kc-a1-gn4">
+                                                    <rect key="frame" x="30" y="11" width="354" height="50"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jmv-wd-m1s">
+                                                            <rect key="frame" x="0.0" y="0.5" width="50" height="49"/>
+                                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="LO3-4T-pzS"/>
+                                                                <constraint firstAttribute="width" constant="50" id="rOE-ee-0Q8"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vls-Gs-58K">
+                                                            <rect key="frame" x="60" y="0.0" width="294" height="50"/>
+                                                            <string key="text">U.K. Secretary of State for International Trade Liz Truss says the bulk of a trade agreement with the U.S. that would boost both countries’ economic recovery has been completed. “We’ve agreed the majority of text in the majority of chapters," Truss said on "Bloomberg Markets." (Source: Bloomberg)</string>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="PsH-Pw-ldr"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="1kc-a1-gn4" firstAttribute="top" secondItem="w9M-YL-2sT" secondAttribute="topMargin" id="7GR-ub-LD8"/>
+                                                <constraint firstItem="1kc-a1-gn4" firstAttribute="leading" secondItem="w9M-YL-2sT" secondAttribute="leadingMargin" constant="10" id="8qo-3o-PH7"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="1kc-a1-gn4" secondAttribute="trailing" constant="10" id="QCc-Js-Oio"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3Y-1x-Cb5" customClass="PostButton" customModule="Circle" customModuleProvider="target">
+                                <rect key="frame" x="177" y="782" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="cgR-aq-C84"/>
+                                    <constraint firstAttribute="height" constant="60" id="nK9-6I-nMY"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="message.fill" catalog="system"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="21E-Ps-uqy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="21E-Ps-uqy" firstAttribute="bottom" secondItem="b3Y-1x-Cb5" secondAttribute="bottom" constant="20" id="10V-ox-At3"/>
+                            <constraint firstItem="Vkv-CF-D8K" firstAttribute="top" secondItem="277-EA-hF0" secondAttribute="bottom" constant="2" id="52p-pL-DLy"/>
+                            <constraint firstItem="Vkv-CF-D8K" firstAttribute="leading" secondItem="21E-Ps-uqy" secondAttribute="leading" id="7sH-TP-JZt"/>
+                            <constraint firstItem="b3Y-1x-Cb5" firstAttribute="centerX" secondItem="ZS4-QU-1Qz" secondAttribute="centerX" id="Aik-D7-KRe"/>
+                            <constraint firstItem="277-EA-hF0" firstAttribute="top" secondItem="21E-Ps-uqy" secondAttribute="top" id="GsW-yA-oCK"/>
+                            <constraint firstItem="277-EA-hF0" firstAttribute="trailing" secondItem="21E-Ps-uqy" secondAttribute="trailing" id="Xy2-HH-aPS"/>
+                            <constraint firstItem="21E-Ps-uqy" firstAttribute="bottom" secondItem="Vkv-CF-D8K" secondAttribute="bottom" id="fQm-3a-hCJ"/>
+                            <constraint firstItem="277-EA-hF0" firstAttribute="leading" secondItem="21E-Ps-uqy" secondAttribute="leading" id="jVT-6l-gbI"/>
+                            <constraint firstItem="Vkv-CF-D8K" firstAttribute="trailing" secondItem="21E-Ps-uqy" secondAttribute="trailing" id="y2T-D8-McV"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="z1x-2z-8Lt"/>
                 </viewController>
@@ -236,6 +304,9 @@
         </scene>
     </scenes>
     <designables>
+        <designable name="b3Y-1x-Cb5">
+            <size key="intrinsicContentSize" width="22" height="22"/>
+        </designable>
         <designable name="hdD-Jq-tz2">
             <size key="intrinsicContentSize" width="18" height="22"/>
         </designable>
@@ -245,6 +316,7 @@
         <image name="chevron.forward" catalog="system" width="96" height="128"/>
         <image name="hiking" width="4032" height="3024"/>
         <image name="message" catalog="system" width="128" height="113"/>
+        <image name="message.fill" catalog="system" width="128" height="113"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>

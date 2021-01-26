@@ -17,6 +17,6 @@ class MessageVC: UIViewController {
     
 
     @IBAction func dismissMessageTapped(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        dismissFromLeft()
     }
 }

@@ -50,11 +50,21 @@ extension UIViewController {
         presentingViewController.dismiss(animated: true, completion: nil)
     }
     
-    func dismissDetail() {
+    func dismissFromLeft() {
         let transition = CATransition()
         transition.duration = 0.15
         transition.type = CATransitionType.push
         transition.subtype = CATransitionSubtype.fromLeft
+        self.view.window?.layer.add(transition, forKey: kCATransition)
+        
+        dismiss(animated: false, completion: nil)
+    }
+    
+    func dismissFromRight() {
+        let transition = CATransition()
+        transition.duration = 0.15
+        transition.type = CATransitionType.push
+        transition.subtype = CATransitionSubtype.fromRight
         self.view.window?.layer.add(transition, forKey: kCATransition)
         
         dismiss(animated: false, completion: nil)

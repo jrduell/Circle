@@ -17,7 +17,7 @@ class ProfileVC: UIViewController {
     
 
     @IBAction func dismissProfileTapped(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        dismissFromRight()
     }
     
 
