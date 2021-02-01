@@ -17,6 +17,7 @@
 		5F7BF14225BB2A38006A29C6 /* MessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7BF14125BB2A38006A29C6 /* MessageVC.swift */; };
 		5F7BF14525BB2A56006A29C6 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7BF14425BB2A56006A29C6 /* ProfileVC.swift */; };
 		5F7BF14925BB2E83006A29C6 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7BF14825BB2E83006A29C6 /* UIViewControllerExt.swift */; };
+		5FC03ACD25C85409001761C6 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC03ACC25C85409001761C6 /* PhotoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		5F7BF14125BB2A38006A29C6 /* MessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageVC.swift; sourceTree = "<group>"; };
 		5F7BF14425BB2A56006A29C6 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		5F7BF14825BB2E83006A29C6 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
+		5FC03ACC25C85409001761C6 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				5F5F314525B8728300DD1F3D /* PostButton.swift */,
+				5FC03ACC25C85409001761C6 /* PhotoCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				5F5F314625B8728300DD1F3D /* PostButton.swift in Sources */,
 				5F7BF14225BB2A38006A29C6 /* MessageVC.swift in Sources */,
 				5F04763B25B39A9300ABB417 /* AppDelegate.swift in Sources */,
+				5FC03ACD25C85409001761C6 /* PhotoCell.swift in Sources */,
 				5F7BF13F25BB2A12006A29C6 /* ContentVC.swift in Sources */,
 				5F7BF14925BB2E83006A29C6 /* UIViewControllerExt.swift in Sources */,
 				5F04763D25B39A9300ABB417 /* SceneDelegate.swift in Sources */,

@@ -11,7 +11,7 @@ extension UIViewController {
     func presentDetailRight(_ viewControllerToPresent: UIViewController) {
         let transition = CATransition()
         transition.duration = 0.15
-        transition.type = CATransitionType.reveal
+        transition.type = CATransitionType.push
         transition.subtype = CATransitionSubtype.fromRight
         self.view.window?.layer.add(transition, forKey: kCATransition)
         
@@ -22,7 +22,7 @@ extension UIViewController {
     func presentDetailLeft(_ viewControllerToPresent: UIViewController) {
         let transition = CATransition()
         transition.duration = 0.15
-        transition.type = CATransitionType.reveal
+        transition.type = CATransitionType.push
         transition.subtype = CATransitionSubtype.fromLeft
         self.view.window?.layer.add(transition, forKey: kCATransition)
         
@@ -53,7 +53,7 @@ extension UIViewController {
     func dismissFromLeft() {
         let transition = CATransition()
         transition.duration = 0.15
-        transition.type = CATransitionType.reveal
+        transition.type = CATransitionType.push
         transition.subtype = CATransitionSubtype.fromLeft
         self.view.window?.layer.add(transition, forKey: kCATransition)
         
@@ -63,7 +63,7 @@ extension UIViewController {
     func dismissFromRight() {
         let transition = CATransition()
         transition.duration = 0.15
-        transition.type = CATransitionType.reveal
+        transition.type = CATransitionType.push
         transition.subtype = CATransitionSubtype.fromRight
         self.view.window?.layer.add(transition, forKey: kCATransition)
         
